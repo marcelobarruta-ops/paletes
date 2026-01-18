@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Paletização</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <h1>📦 Sistema de Paletização</h1>
+
+  <div class="box">
+    <label>Nome do produto</label>
+    <input id="nome" placeholder="Ex: Água 600ml">
+
+    <label>Classe</label>
+    <select id="classe"></select>
+
+    <label>Quantidade de fardos</label>
+    <input id="quantidade" type="number">
+
+    <button id="btnAdicionar">➕ Adicionar Produto</button>
+  </div>
+
+  <h2>📋 Produtos adicionados</h2>
+  <div id="lista"></div>
+
+  <button id="btnCalcular" class="gerar">🔄 Gerar Paletes</button>
+
+  <h2>📊 Resultado</h2>
+  <pre id="resultado"></pre>
+
+</body>
+</html>
